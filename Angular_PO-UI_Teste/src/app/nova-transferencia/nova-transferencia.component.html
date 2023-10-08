@@ -1,0 +1,38 @@
+<section class="container">
+  <form class="formulario" (ngSubmit)="transferir()">
+    <h2 class="formulario_titulo">Nova transferencia</h2>
+  
+    <div class="form-field">
+      <label class="form-field_label" for="valor">Valor</label>
+      <input 
+        type="number" 
+        id="valor"
+        name="valor"
+        class="form-field_input" 
+        [(ngModel)]="valor"
+        
+      />
+    </div>
+  
+    <div class="form-field">
+      <label class="form-field_label" for="destino">Destino</label>
+      <select
+        id="destino"
+        name="destino"
+        class="form-field_input" 
+        [(ngModel)]="destino"
+      >
+      <option>
+        Selecionar
+      </option>
+      <option *ngFor="let listaDestino of listaDestinos">
+        {{ listaDestino.conta }}
+      </option>
+      </select>
+    </div>
+  
+    <div class="botao-wrapper">
+      <button class="botao" type="submit">Transferir</button>
+    </div>
+  </form>
+</section>

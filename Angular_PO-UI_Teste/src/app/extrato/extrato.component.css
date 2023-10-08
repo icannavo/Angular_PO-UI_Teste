@@ -1,0 +1,36 @@
+.container{
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.tabela{
+  text-align: center;
+  margin: 0 auto;
+ 
+}
+
+.cabecalho{
+  color: var(--primary);
+}
+
+.cabecalho:last-child{
+  border-bottom: none;
+}
+
+.conteudo{
+  padding: 10px;
+  border-bottom: 2px solid green;
+}
+
+.linha{
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
